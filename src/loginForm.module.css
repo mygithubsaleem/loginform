@@ -1,0 +1,13 @@
+form {
+	background-color: pink;
+	text-align: center;
+	height: max-content;
+	overflow-y: visible;
+}
+
+.no-margin {
+	margin: 0;
+}
+.loginbody {
+	background: blue;
+}
