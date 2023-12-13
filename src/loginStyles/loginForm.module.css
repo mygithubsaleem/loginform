@@ -1,0 +1,14 @@
+.login_header {
+	width: 100%;
+	background-color: aqua;
+}
+ul {
+	display: flex;
+	list-style-type: none;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+form {
+	text-align: center;
+	background-color:blanchedalmond;
+}
