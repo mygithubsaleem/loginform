@@ -10,5 +10,13 @@ ul {
 }
 form {
 	text-align: center;
-	background-color:blanchedalmond;
+	background-color: blanchedalmond;
+}
+.login_footer {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: black;
+	color: yellow;
+	margin-left: 0px;
 }

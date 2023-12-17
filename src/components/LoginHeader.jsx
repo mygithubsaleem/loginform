@@ -16,7 +16,7 @@ const LoginHeader = () => {
 						<li>
 							<h1>
 								{" "}
-								<span style={{ color: "blue", paddingLeft: 40 }}>
+								<span style={{ color: "blue", paddingLeft: 20 }}>
 									SHIFT Solution & Traning Institue
 								</span>
 							</h1>

@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import LoginFooter from "./components/LoginFooter";
 
 const Loginapp = () => {
 	const [userArray, setUseArray] = useState([
@@ -36,22 +37,22 @@ const Loginapp = () => {
 	};
 	return (
 		<>
-			<Form >
+			<Form>
 				{" "}
 				<LoginHeader />
-				<br />
+				<div style={{ height: 50 }}></div>
 				<label>Enter email:</label>
 				<input
-					className="m-2"
+					className="m-4"
 					type="text"
 					value={currentInput.email}
 					onChange={(e) => {
 						setCurrentInpput({ ...currentInput, email: e.target.value });
 					}}
 				/>
-				<label className=" m-3">Enter password:</label>
+				<label className="m-4">Enter password:</label>
 				<input
-					className="m-2"
+					className="m-4"
 					type={togAction ? "password" : "text"}
 					value={currentInput.pw}
 					onChange={(e) => {
@@ -69,12 +70,7 @@ const Loginapp = () => {
 						<FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
 					)}
 				</Button>
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
+				<div style={{ height: 50 }}></div>
 				<Button
 					onClick={() => {
 						checkUser();
@@ -82,15 +78,9 @@ const Loginapp = () => {
 				>
 					Submit
 				</Button>
-				<br />
-				<br />
-				<br />
-				<br />
+				<div style={{ height: 190 }}></div>
+				<LoginFooter />
 				<h2>{JSON.stringify(userArray)}</h2>
-				<br />
-				<br />
-				<br />
-				<br />
 			</Form>
 		</>
 	);
